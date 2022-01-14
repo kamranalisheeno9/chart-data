@@ -1,0 +1,62 @@
+.nav-li{
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 220px;
+    letter-spacing: 0px;
+    
+}
+.nav-li a{
+    transition: 0.2s all ease-in-out !important;
+    color: black !important;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+.nav-li a:hover{
+    color: rgba(0, 0, 0, 0.692) !important;
+    background-color: #79A6FE;  
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+    color: white;
+
+
+
+}
+.wishlish-text{
+    text-align: center;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+.main-row-home{
+    justify-content: space-around;
+    margin: 0px !important;
+}
+.check-box{
+    font-size: 20px !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+.wishlist-container{
+    padding: 10px;
+    border-left: 2px solid #9fbfff;
+}
+.line-chart{
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+.chart-data-row{
+    align-items: center;
+}
+.coin-chart-text{
+    color: white;
+    font-size: 18px;
+
+}
+.coin-chart-text span{
+    font-weight: 600;
+    font-size: 20px;
+}

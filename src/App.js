@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Home from './pages/Home'
+import Preview from './pages/preview'
+import Pools from './pages/Table'
+import Portfolio from './pages/Portfolio'
+import Available from './pages/Available'
+import { Routes, Route, Link } from "react-router-dom";
+import { useState } from 'react';
 function App() {
+  const [current,setCurrent]=useState("")
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+         <Routes>
+        <Route path="/available" element={<Available />} />
+        <Route path="/portfolio" element={<Portfolio data={current} setData={setCurrent} />} />
+        <Route path="/pools"  element={<Pools data={current} setData={setCurrent} />} />
+        <Route path="/preview-page" element={<Preview />} />
+        <Route path="/" element={<Home />} />
+      </Routes>
     </div>
   );
 }
