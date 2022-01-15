@@ -95,7 +95,7 @@ const Home = (props) => {
                                         Deposit/Withdraw
                                        </Link>
                                         </Nav.Link>
-                                    <Nav.Link  className='nav-li'>
+                                    <Nav.Link  className='nav-li search-li'>
                                         <Link to="/">
                                         Search
                                        </Link>

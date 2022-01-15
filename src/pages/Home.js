@@ -52,7 +52,7 @@ const Home = (props) => {
                                         Deposit/Withdraw
                                        </Link>
                                         </Nav.Link>
-                                    <Nav.Link  className='nav-li'>
+                                    <Nav.Link  className='nav-li search-li'>
                                         <Link to="/">
                                         Search
                                        </Link>
@@ -64,25 +64,33 @@ const Home = (props) => {
                             </Navbar.Collapse>
                         </Container>
                     </Navbar>
-                    <Container>
+                    
+                    <Row>
+                        <Col lg={9}>
+
+                    <Row className='justify-content-between chart-data-row'>
+                        <Col sm={9} >
+                        <Container className='portfolio-text'>
                         <h3>Portfolio</h3>
                         <h5>$ XXX.00 + 8% Today</h5>
-                    </Container>
-                    <Row className='justify-content-between chart-data-row'>
-                        <Col md={7} >
+                    </Container>                            
                             <Container className='line-chart'>
 
                         <Line data={data} />
                             </Container>
                         </Col>
-                        <Col md={3} style={{textAlign:"center"}}>
+                        <Col sm={3} className='chart-coins' style={{textAlign:"center",}}>
                             <p className='coin-chart-text'>Bitcoin <span>$ 20</span></p>
                             <p className='coin-chart-text'>Tether <span>$ 10</span></p>
                             <p className='coin-chart-text'>Ethereum <span>$ 5</span></p>
                             <p className='coin-chart-text'>Doge <span>$ 30</span></p>
                             <p className='coin-chart-text'>Solana <span>$ 60</span></p>
                         </Col>
-                        <Col md={2} className='wishlist-container' >
+                      
+                    </Row>
+                                </Col>
+                    <Col lg={3}>
+                    <Container  className='wishlist-container' >
                     <Container className="wishlish-text">Wishlist</Container>
                     <Form.Group  className="check-box" controlId="formBasicCheckbox">
                         <Form.Check type="checkbox"
@@ -134,9 +142,9 @@ const Home = (props) => {
                             label="Wish 10"
                         />
                     </Form.Group>
-                </Col>
+                </Container>
+                    </Col>
                     </Row>
-
                 </Col>
                
             </Row>

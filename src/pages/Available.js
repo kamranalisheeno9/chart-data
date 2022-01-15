@@ -55,7 +55,7 @@ const Available =()=> {
 
      
      <Button className='arrow-btn' variant="primary" onClick={handleShow}>
-        <AiOutlineArrowLeft />
+        $
       </Button>
 
       <Offcanvas className="canvas-container" placement='end' show={show} onHide={handleClose}>
